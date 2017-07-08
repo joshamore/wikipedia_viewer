@@ -1,3 +1,4 @@
+// Generates the correct URL for JSON request and calls getWikiData function.
 function wikiPull() {
     var searchTerm = document.getElementById("searchTerm").value;
     searchTerm = encodeURIComponent(searchTerm);
@@ -7,6 +8,7 @@ function wikiPull() {
     getWikiData(url);
 }
 
+// Formats and adds wiki information to DOM.
 function getWikiData(url) {
     $.getJSON(url, function(results) {
         $("#wikiData").empty();
