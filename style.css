@@ -1,39 +1,58 @@
+body {
+    background-image: url(assets/background-texture.png);
+}
+
+
+/*******************************
+Header Section
+*******************************/
 #header {
     font-family: 'Anton', sans-serif;
 }
-
 #nameHeading {
     font-family: 'Cairo', sans-serif;
     font-size: 2em;
     font-style: italic;
 }
+#subHeadinginfo {
+    font-family: 'Cairo', sans-serif;
+}
 
+
+/*******************************
+Search Section
+*******************************/
 #randomArticle {
     margin-top: 5px;
 }
 
+
+/*******************************
+Search Section
+*******************************/
 .results {
     border: 1px solid black;
     background-color: #D3D3D3;
     margin: 3%;
 }
 
+
+/*******************************
+Results Section
+*******************************/
 .results:hover {
     box-shadow: 10px 10px 10px 5px #888888;
 }
-
 .results h2 {
     color: #253F3F;
     font-family: 'Anton', sans-serif;    
 }
-
 .results p {
     color: black;
     font-family: 'Cairo', sans-serif;
     font-size: 1.1em;
     text-decoration: none;
 }
-
 #wikiData a:hover {
     text-decoration: none;
 }
