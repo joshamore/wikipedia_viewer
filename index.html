@@ -11,33 +11,37 @@
     
 <body>
 <div class="container">
-    
+
+<div id="topSection" class="text-center">
 <!-- Start of heading section -->
 <div id="header">
-    <h1>Wikipedia Viewer</h1>
+    <h1 id="mainHeader">Wikipedia Viewer</h1>
     <h2 id="nameHeading">By <a href="https://joshamore.com" target="_blank">Josh Amore</a>.</h2>
     <p id="subHeadinginfo">View this code on <a href="https://github.com/joshamore/wikipedia_viewer" target="_blank">GitHub</a>.</p>
 </div>
-<!-- End of heading section -->    
+<!-- End of heading section -->
+
 <hr>
+
 <!-- Start search box and button -->
 <div id="searchInput">
     <h2>Find Wikipedia Articles</h2>
-    <p>Entering a search term in the below form will generate the top ten matching Wikipedia articles.</p>
+    <p>View the top ten Wikipedia articles for a search term.</p>
     
     <form>
         <input type="text" id="searchTerm">
         <input type="submit" value="Search" onclick="wikiPull(); return false;" class="btn btn-default">
     </form>
+
+    <div id="randomArticle">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Want A Random Article?</a>
+    </div>
 </div>
 <!-- End search box and button -->
-
-<!-- Start of random entry link -->
-<div id="randomArticle">
-    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Want A Random Article?</a>
 </div>
-<!-- End of random entry link -->
+
 <hr>
+
 <!-- Start of wiki data section -->
 <div id="wikiData"></div>
 <!-- End of wiki data section -->
